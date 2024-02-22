@@ -2,10 +2,10 @@
 AXON Framework</h1>
 
 <p> We have created 2 microservices to demonstrate happy scanerio & error scanerio with compensating transaction rollback between these 2 microservices</p>
-<h2>eureka naming server</h2>
-<h2>spring cloud API Gateway</h2>
-<h2>car-inventory microservice</h2>
-<h2>car-booking microservice</h2>
+<h4>eureka naming server</h4>
+<h4>spring cloud API Gateway</h4>
+<h4>car-inventory microservice</h4>
+<h4>car-booking microservice</h4>
 
 
 <h3>First Thing First Download Axon Server & Install</h3>
