@@ -1,5 +1,5 @@
-First Thing First
-Download Axon Server & Install
+#First Thing First
+##Download Axon Server & Install
 ==============================
 Go To Axon Installed Directory
 ..AxonServer\AxonServer-2023.2.1[Version]
@@ -70,7 +70,7 @@ car inventory microservice post api endpoint & payload
 URL: http://localhost:8765/car-inventory-service/car-inventory
 Method: POST
 Payload:
-
+```json
 {
     "carName":"X5 xDrive40i xLine",
     "cc": "2998",
@@ -79,6 +79,7 @@ Payload:
     "color": "red",
     "inStockQuantity": 30
 }
+```
 response ==> 8227ee76-e1b8-43b5-9566-ecbb0ad45404
 NOTE:- Copy the response UUID and paste in carModelId payload car booking endpoint
 ********************
@@ -97,6 +98,7 @@ car booking microservice post api endpoint & payload
 URL: http://localhost:8765/car-booking-service/car-booking
 Method: POST
 Payload:
+```json
 {	
 "carModelId": "8227ee76-e1b8-43b5-9566-ecbb0ad45404", <<==== paste the reposne UUID of car-inventory endpoint here
 "quantity":1,
@@ -104,6 +106,7 @@ Payload:
 "advanceBookingPaidAmount": 600,
 "totalAmount": 82895
 }
+```
 ********************
 ********************
 ********************
@@ -118,6 +121,8 @@ Payload:
 Negative Scanerio Test Car Booking Service
 ==========================================
 http://localhost:8765/car-booking-service/car-booking
+
+```json
 {	
 "carModelId": "8227ee76-e1b8-43b5-9566-ecbb0ad45404", <<==== paste the reposne UUID of car-inventory endpoint here
 "quantity":50,
@@ -125,3 +130,4 @@ http://localhost:8765/car-booking-service/car-booking
 "advanceBookingPaidAmount": 600,
 "totalAmount": 82895
 }
+```
