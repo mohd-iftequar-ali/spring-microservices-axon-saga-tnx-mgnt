@@ -1,3 +1,12 @@
+First Thing First
+Download Axon Server & Install
+==============================
+Go To Axon Installed Directory
+..AxonServer\AxonServer-2023.2.1[Version]
+Here Start the Axon Server By Using Below Command
+
+java -jar axonserver.jar
+
 Eureka Discovery Server URL
 ===========================
 http://localhost:8761/
