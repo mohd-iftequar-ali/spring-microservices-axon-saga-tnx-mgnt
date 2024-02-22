@@ -58,7 +58,6 @@ password : root
 <br />
 <h3>car booking H2 Database URL & connection details</h3>
 
-<br />
 http://localhost:8081/h2-console/
 <br />
 driver Class: org.h2.Driver
